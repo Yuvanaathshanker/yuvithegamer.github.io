@@ -1,0 +1,245 @@
+/* --- Global Styles & Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif; 
+    color: #333; 
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* --- Typography --- */
+h1 {
+    font-size: 3em;
+    color: #8b0000;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #444;
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: #333232;
+    padding: 15px 5%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 200px;
+    height: auto;
+}
+
+nav.main-nav {
+    width: 100%;
+}
+
+nav.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+}
+
+nav.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; 
+    transition: border-bottom 0.3s;
+}
+
+nav.main-nav a:hover {
+    color: #fff;
+    border-bottom: 3px solid #b8860b;
+}
+
+/* --- Reusable Button Style --- */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #a52a2a;
+}
+
+.button-secondary {
+    background-color: #c9a0dc; 
+}
+
+.button-secondary:hover {
+    background-color: #b08dcf;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: url('add9c1a2-5073-4ed3-9a66-f3fe4dbb7098-1.JPG') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+    padding: 20px;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Venue Details Section --- */
+.details-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.detail-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    flex: 1;
+    text-align: center;
+}
+
+.detail-card h3 {
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+/* --- Gallery Section --- */
+.gallery-section {
+    text-align: center;
+    background-color: #fff;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* --- Contact Section & Form --- */
+.contact-section {
+    background-color: #f0f0f0;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: grid;
+    gap: 15px;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    color: #555;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* --- Footer and Social Links --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.social-links {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #c44a4a;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #c9a0dc; /* Accent color on hover */
+}
+
+.phone-number a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.phone-number a:hover {
+    color: #c9a0dc;
+}
